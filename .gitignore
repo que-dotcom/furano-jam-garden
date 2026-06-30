@@ -1,0 +1,29 @@
+# === 公開リポジトリに「中身」を出さないための除外 ===
+# 平文ソース（答え等を含む）・ビルド道具・手順書は公開しない。
+# 公開するのは StatiCrypt で暗号化した HTML と .nojekyll / README のみ。
+/src/
+/build.mjs
+/package.json
+/package-lock.json
+
+# 3D 原本データ（パスワードゲートを迂回されないよう公開しない・ローカル保管）
+/3d/models/
+/3d/scripts/
+/3d/data/
+
+# ローカルのエディタ/ツール設定
+.claude/
+
+# 依存・中間生成物
+node_modules/
+.build/
+.npmcache/
+.cache/
+_*.cjs
+_*.js.tmp
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
